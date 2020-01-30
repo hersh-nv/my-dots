@@ -38,47 +38,47 @@ bindsym $mod+x kill
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # rofi launcher
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+s exec rofi -show drun
 
 # change focus with the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+n focus left
+bindsym $mod+e focus down
+bindsym $mod+i focus up
+bindsym $mod+o focus right
 
 # move focused window
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+n move left
+bindsym $mod+Shift+e move down
+bindsym $mod+Shift+i move up
+bindsym $mod+Shift+o move right
 
 # shift workspace across monitors 
-bindsym $mod+Ctrl+h move workspace to output left
-bindsym $mod+Ctrl+j move workspace to output down
-bindsym $mod+Ctrl+k move workspace to output up
-bindsym $mod+Ctrl+l move workspace to output right
+bindsym $mod+Ctrl+n move workspace to output left
+bindsym $mod+Ctrl+e move workspace to output down
+bindsym $mod+Ctrl+i move workspace to output up
+bindsym $mod+Ctrl+o move workspace to output right
 
 # split in horizontal orientation
-bindsym $mod+b split h
+bindsym $mod+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $mod+t fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+q layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+f layout toggle all
 
 # toggle tiling / floating
 bindsym $mod+Shift+f floating toggle
@@ -117,7 +117,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+v reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -126,7 +126,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+x exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-9' -sb "#ff6600" -nb "#000000" -i -p "Shutdown?") = "YES" ] && systemctl poweroff'
 bindsym $mod+Shift+Ctrl+x exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-9' -sb "#ff6600" -i -p "Reboot?") = "YES" ] && systemctl reboot'
 bindsym $mod+Shift+z exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-9' -sb "#ff6600" -i -p "Suspend?") = "YES" ] && systemctl suspend'
-bindsym $mod+Shift+e exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-9' -sb "#ff6600" -i -p "Logout?") = "YES" ] && i3-msg exit'
+bindsym $mod+Shift+c exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-9' -sb "#ff6600" -i -p "Logout?") = "YES" ] && i3-msg exit'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -136,10 +136,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym n resize shrink width 10 px or 10 ppt
+        bindsym e resize grow height 10 px or 10 ppt
+        bindsym i resize shrink height 10 px or 10 ppt
+        bindsym o resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 2 px or 2 ppt
@@ -231,8 +231,8 @@ set $inner-gap-size 5
 set $outer-gap-size 0
 gaps inner $inner-gap-size
 gaps outer $outer-gap-size
-bindsym $mod+n gaps inner all set 0
-bindsym $mod+Shift+n gaps outer all set 0
+bindsym $mod+k gaps inner all set 0
+bindsym $mod+Shift+k gaps outer all set 0
 bindsym $mod+m gaps inner all set $inner-gap-size
 bindsym $mod+Shift+m gaps outer all set $outer-gap-size
 
@@ -255,8 +255,8 @@ bindsym $mod+Tab workspace back_and_forth
 
 #music
 bindsym $mod+u exec --no-startup-id spotifycli --prev
-bindsym $mod+i exec --no-startup-id spotifycli --playpause
-bindsym $mod+o exec --no-startup-id spotifycli --next
+bindsym $mod+y exec --no-startup-id spotifycli --playpause
+bindsym $mod+semicolon exec --no-startup-id spotifycli --next
 
 #scratchpad
 floating_modifier $mod

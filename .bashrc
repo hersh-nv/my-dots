@@ -133,8 +133,9 @@ alias nf='neofetch'
 alias cnf='clear && neofetch'
 alias v='nvim'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias kbqwerty='setxkbmap us'
-alias kbcolemak='setxkbmap us -variant colemak'
+alias kbq='setxkbmap us'
+alias kbc='setxkbmap us -variant colemak'
+alias rr='ranger'
 
 # GIT #
 alias gs='git status'

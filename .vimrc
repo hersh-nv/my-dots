@@ -32,14 +32,15 @@ filetype plugin indent on    " required
 
 """
 " Plugins will be downloaded under the specified directory.
-"call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 "Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'terryma/vim-multiple-cursors'
+Plug 'jooize/vim-colemak'
 
 " List ends here. Plugins become visible to Vim after this call.
-"call plug#end()
+call plug#end()
 
 set runtimepath+=~/.vim_runtime
 
