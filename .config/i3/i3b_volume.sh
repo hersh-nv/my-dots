@@ -11,6 +11,8 @@ elif [[ $(echo $sink | grep bluez) ]]; then
   sinko=BT
 elif [[ $(echo $sink | grep analog) ]]; then
   sinko=ANA
+elif [[ $(echo $sink | grep usb) ]]; then
+  sinko=USB
 #else
 #  sinko=''
 fi
