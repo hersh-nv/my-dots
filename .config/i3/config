@@ -19,7 +19,7 @@ set $mod Mod4
 #font pango:Fantasque Sans Mono 12
 #font pango:IBM Plex Mono 11
 #font pango:fira mono 11
-font pango:Roboto Mono 18
+font pango:Roboto Mono 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -181,7 +181,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 bar {
   i3bar_command /usr/bin/i3bar --transparency
-  font pango: Roboto Mono, Font Awesome 5 Free, 16
+  font pango: Roboto Mono, Font Awesome 5 Free, 8
   separator_symbol " / "
 	position top
 	# status_command i3status
@@ -229,7 +229,7 @@ for_window [class=".*"] border pixel 1
 # default_border pixel 0
 # default_floating_border pixel 10
 hide_edge_borders smart
-set $inner-gap-size 20
+set $inner-gap-size 10
 set $outer-gap-size 0
 gaps inner $inner-gap-size
 gaps outer $outer-gap-size
