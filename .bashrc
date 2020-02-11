@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -136,6 +136,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias kbq='setxkbmap us'
 alias kbc='setxkbmap us -variant colemak'
 alias rr='ranger'
+alias sudo='sudo '
 
 # GIT #
 alias gs='git status'
@@ -161,3 +162,5 @@ alias gfixupm='git commit --amend'
 #[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=~/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH
+
+export PATH=/home/hersh/.local/bin:$PATH

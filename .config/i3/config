@@ -19,7 +19,7 @@ set $mod Mod4
 #font pango:Fantasque Sans Mono 12
 #font pango:IBM Plex Mono 11
 #font pango:fira mono 11
-font pango:Terminus 9
+font pango:Roboto Mono 18
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -38,7 +38,7 @@ bindsym $mod+x kill
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # rofi launcher
-bindsym $mod+s exec rofi -show drun
+bindsym $mod+s exec rofi -font 'Roboto Mono 18' -show drun
 
 # change focus with the cursor keys:
 bindsym $mod+Left focus left
@@ -181,7 +181,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 bar {
   i3bar_command /usr/bin/i3bar --transparency
-  font pango: Terminus, Font Awesome 5 Free, 9
+  font pango: Roboto Mono, Font Awesome 5 Free, 16
   separator_symbol " / "
 	position top
 	# status_command i3status
@@ -198,24 +198,26 @@ bar {
 }
 
 # 2019/10/02 21:03:35 this is part of a tutorial to integrate i3 with GNOME
-exec --no-startup-id gnome-session
-exec --no-startup-id dbus-send \
-    --session \
-    --print-reply=literal \
-    --dest=org.gnome.SessionManager \
-    "/org/gnome/SessionManager" \
-    org.gnome.SessionManager.RegisterClient \
-    "string:i3" \
-    "string:$DESKTOP_AUTOSTART_ID"
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+#exec --no-startup-id gnome-session
+#exec --no-startup-id dbus-send \
+#    --session \
+#    --print-reply=literal \
+#    --dest=org.gnome.SessionManager \
+#    "/org/gnome/SessionManager" \
+#    org.gnome.SessionManager.RegisterClient \
+#    "string:i3" \
+#    "string:$DESKTOP_AUTOSTART_ID"
+#exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
 #exec_always --no-startup-id gnome-power-manager
 #exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id gnome-flashback
 
 # startup
-exec --no-startup-id xflux -l -37.84 -g 144.95
+exec --no-startup-id redshift -l -37.84:144.95
 exec --no-startup-id compton --vsync -b -i 0.9
+exec --no-startup-id feh --bg-scale ~/pictures/wallpaper.png
 exec urxvt -hold -e bash -c "neofetch && bash"
+exec --no-startup-id nm-applet
 
 # wallpaper
 exec_always feh --bg-scale ~/Pictures/wallpaper.png
@@ -227,7 +229,7 @@ for_window [class=".*"] border pixel 1
 # default_border pixel 0
 # default_floating_border pixel 10
 hide_edge_borders smart
-set $inner-gap-size 5
+set $inner-gap-size 20
 set $outer-gap-size 0
 gaps inner $inner-gap-size
 gaps outer $outer-gap-size
