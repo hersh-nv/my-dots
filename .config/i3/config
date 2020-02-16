@@ -133,7 +133,7 @@ bindsym $mod+r mode "resize"
 set $white               #ffffffff
 set $black               #000000ff
 set $transparent         #00000000
-set $border-active       #ffffffff
+set $border-active       #44ff44ff
 set $border-inactive     #11111177
 set $bg-color            #000000ff
 set $inactive-bg-color   #00000000
@@ -154,12 +154,12 @@ client.focused_inactive $border-inactive    $border-inactive   $inactive-text-co
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00ff
 
 bar {
-  i3bar_command /usr/bin/i3bar --transparency
-  font pango: Roboto Mono, Font Awesome 5 Free, 8
-  separator_symbol " / "
+	i3bar_command /usr/bin/i3bar --transparency
+	font pango: Roboto Mono, Font Awesome 5 Free, 9
+	separator_symbol " / "
 	position top
 	# status_command i3status
-  status_command i3blocks -c /home/hersh/.config/i3/i3blocks.conf
+	status_command i3blocks -c /home/hersh/.config/i3/i3blocks.conf
 	#status_command polybar
 	colors {
 		background $transparent
@@ -188,13 +188,13 @@ bar {
 
 # startup
 exec --no-startup-id redshift -l -37.84:144.95
-exec --no-startup-id compton --vsync -b -i 0.9
-exec --no-startup-id feh --bg-scale ~/pictures/wallpaper.png
+exec --no-startup-id compton --vsync -b -i 0.8
 exec urxvt -hold -e bash -c "neofetch && bash"
 exec --no-startup-id nm-applet
+exec --no-startup-id xinput set-button-map $(xinput list | egrep "Touchpad" | sed -e 's/^.*id=//' -e 's/\s.*$//') 1 2 3 5 4 6 7
 
 # wallpaper
-exec_always feh --bg-scale ~/Pictures/wallpaper.png
+exec_always feh --bg-scale ~/pictures/wallpaper.png
 
 # disable borders for i3-gaps
 # for_window [class=".*"] border_radius 10
@@ -222,9 +222,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scrn-btness-tick
 bindsym XF86Display exec --no-startup-id autorandr --change
 bindsym XF86Explorer exec --no-startup-id autorandr --change
 bindsym XF86Favorites exec --no-startup-id curl 192.168.0.49/TOGGLE
-bindsym Print exec gnome-screenshot -i
-bindsym $mod+Print exec gnome-screenshot -c
-bindsym $mod+Ctrl+Print exec gnome-screenshot -a -c
+bindsym $mod+Ctrl+Shift+s exec gnome-screenshot -i
+#bindsym $mod+Print exec gnome-screenshot -c
+bindsym $mod+Shift+s exec gnome-screenshot -a -c
 #bindsym $mod+Alt+Print exec gnome-screenshot -a
 #bindsym $mod+Ctrl+Alt+Print exec gnome-screenshot -a -c
 bindsym $mod+Tab workspace back_and_forth
