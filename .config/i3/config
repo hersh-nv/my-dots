@@ -198,6 +198,8 @@ bar {
 }
 
 # 2019/10/02 21:03:35 this is part of a tutorial to integrate i3 with GNOME
+exec --no-startup-id xrdb -load /home/hersh/.Xresources
+exec --no-startup-id setxkbmap us -variant colemak
 exec --no-startup-id gnome-session
 exec --no-startup-id dbus-send \
     --session \
