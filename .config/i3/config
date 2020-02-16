@@ -228,7 +228,7 @@ for_window [class=".*"] border pixel 1
 # for_window [instance="__focused__"] border normal 0
 # default_border pixel 0
 # default_floating_border pixel 10
-hide_edge_borders smart
+# hide_edge_borders smart
 set $inner-gap-size 5
 set $outer-gap-size 0
 gaps inner $inner-gap-size
