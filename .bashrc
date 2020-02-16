@@ -137,6 +137,7 @@ alias kbq='setxkbmap us'
 alias kbc='setxkbmap us -variant colemak'
 alias rr='ranger'
 alias sudo='sudo '
+alias seervpn='nohup bash -c "sudo openvpn --config ~/hersh.ovpn" &'
 
 # GIT #
 alias gs='git status'
