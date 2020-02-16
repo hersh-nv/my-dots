@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -ahlF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -125,6 +125,7 @@ md () { mkdir -p $1 cd $1; }
 myt () { mpv --ytdl-format='bestvideo[height<=?1080]+bestaudio/best' ytdl://ytsearch:"$@"; }
 
 # ALIASES #
+alias sudo='sudo '
 alias gnome-backup='sudo cp ~/.config/dconf/user ~/.config/dconf/user.backup'
 alias spt='spotifycli'
 alias subln='subl -n'
