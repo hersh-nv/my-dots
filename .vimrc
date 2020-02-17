@@ -31,6 +31,8 @@ call plug#end()
 set number
 set ruler
 set mouse=a
+set t_Co=256
+autocmd FileType text set wrap linebreak nolist
 
 set tabstop=2
 set shiftwidth=0
