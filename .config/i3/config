@@ -30,7 +30,11 @@ focus_wrapping no
 # general window + workspace mgmt
 bindsym $mod+Return exec urxvt
 bindsym $mod+x kill
-bindsym $mod+s exec rofi -font 'Roboto Mono 18' -show drun
+bindsym $mod+s exec rofi \
+	-font 'Roboto Mono 18' \
+	-combi-modi window#drun \
+	-modi combi \
+	-show combi
 bindsym $mod+t fullscreen toggle
 bindsym $mod+Shift+f floating toggle
 bindsym $mod+a focus parent
@@ -101,10 +105,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 # system + i3 mgmt
 bindsym $mod+Shift+v reload
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+x exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-12' -sb "#ff6600" -nb "#000000" -i -p "Shutdown?") = "YES" ] && systemctl poweroff'
-bindsym $mod+Shift+Ctrl+x exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-12' -sb "#ff6600" -i -p "Reboot?") = "YES" ] && systemctl reboot'
-bindsym $mod+Shift+z exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-12' -sb "#ff6600" -i -p "Suspend?") = "YES" ] && systemctl suspend'
-bindsym $mod+Shift+c exec sh -c '[ $(echo "NO\nYES" | dmenu -fn 'Terminus-12' -sb "#ff6600" -i -p "Logout?") = "YES" ] && i3-msg exit'
+bindsym $mod+Shift+z exec ~/.config/rofi/rofi-power.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
