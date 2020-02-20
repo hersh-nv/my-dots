@@ -187,6 +187,7 @@ exec urxvt -hold -e bash -c "neofetch && bash"
 exec_always feh --bg-scale ~/pictures/wallpaper.png
 exec --no-startup-id nm-applet
 exec --no-startup-id xinput set-button-map $(xinput list | egrep "Touchpad" | sed -e 's/^.*id=//' -e 's/\s.*$//') 1 2 3 5 4 6 7
+exec --no-startup-id xautolock -time 5 -locker sxlock
 
 
 # =============================================
