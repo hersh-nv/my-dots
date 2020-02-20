@@ -180,7 +180,6 @@ bar {
 # STARTUP																			"
 # =============================================
 exec --no-startup-id xrdb -load /home/hersh/.Xresources
-exec --no-startup-id setxkbmap us -variant colemak
 exec --no-startup-id redshift -l -37.84:144.95
 exec --no-startup-id compton --vsync -b -i 0.8
 exec urxvt -hold -e bash -c "neofetch && bash"
