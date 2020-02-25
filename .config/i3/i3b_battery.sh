@@ -22,6 +22,10 @@ else
 	icon=
 fi
 
+if [ "$chg_percent" == "100%" ]; then
+	chg_percent=100
+fi
+
 echo $icon $chg_percent%
 echo $icon $chg_percent%
 if [ "$chg_percent" -le 15 ] && [ "$chg_status" == "discharging" ]; then
