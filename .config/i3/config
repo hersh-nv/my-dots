@@ -145,7 +145,7 @@ set $text-color-dark     #000000ff
 set $inactive-text-color #ffffffff
 set $urgent-bg-color     #E53935ff
 set $ws-focus-bg-color   #ffffffff
-set $ws-focus-text-color #bb0088ff
+set $ws-focus-text-color #110033ff
 set $ws-unfocus-bg-color #00000022
 set $ws-unfocus-text-color #ffffffff
 
@@ -182,7 +182,7 @@ bar {
 # =============================================
 exec --no-startup-id xrdb -load /home/hersh/.Xresources
 exec --no-startup-id redshift -l -37.84:144.95
-exec --no-startup-id compton --vsync -b -i 0.8
+exec --no-startup-id compton --vsync -b
 exec urxvt -hold -e bash -c "neofetch && bash"
 exec_always feh --bg-scale ~/pictures/wallpaper.png
 exec --no-startup-id nm-applet
