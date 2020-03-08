@@ -1,0 +1,30 @@
+# LS
+alias ll='ls -ahlF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# GENERAL
+alias sudo='sudo '
+alias gnome-backup='sudo cp ~/.config/dconf/user ~/.config/dconf/user.backup'
+alias spt='spotifycli'
+alias subln='subl -n'
+alias jb-cplib='cp -r ~/repos/juice-box/firmware/lib/* ~/Arduino/libraries/'
+alias nf='neofetch'
+alias cnf='clear && neofetch'
+alias v='nvim'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias kbq='setxkbmap us'
+alias kbc='setxkbmap us -variant colemak'
+alias rr='ranger'
+
+# GIT
+alias gs='git status'
+alias gd='git diff'
+alias gch='git checkout'
+alias gchm='git checkout master'
+alias glol='git log --oneline -n 10'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gau='git add -u'
+alias gfixup='git commit --amend --no-edit'
+alias gfixupm='git commit --amend'
