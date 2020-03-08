@@ -87,11 +87,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alFh'
-alias la='ls -A'
-alias l='ls -CF'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -123,33 +118,6 @@ fi
 #############
 md () { mkdir -p $1 cd $1; }
 myt () { mpv --ytdl-format='bestvideo[height<=?1080]+bestaudio/best' ytdl://ytsearch:"$@"; }
-
-# ALIASES #
-alias gnome-backup='sudo cp ~/.config/dconf/user ~/.config/dconf/user.backup'
-alias spt='spotifycli'
-alias subln='subl -n'
-alias jb-cplib='cp -r ~/repos/juice-box/firmware/lib/* ~/Arduino/libraries/'
-alias nf='neofetch'
-alias cnf='clear && neofetch'
-alias v='nvim'
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias kbq='setxkbmap us'
-alias kbc='setxkbmap us -variant colemak'
-alias rr='ranger'
-alias sudo='sudo '
-alias seervpn='nohup bash -c "sudo openvpn --config ~/hersh.ovpn" &'
-
-# GIT #
-alias gs='git status'
-alias gd='git diff'
-alias gch='git checkout'
-alias gchm='git checkout master'
-alias glol='git log --oneline -n 10'
-alias gcm='git commit -m'
-alias gcam='git commit -a -m'
-alias gau='git add -u'
-alias gfixup='git commit --amend --no-edit'
-alias gfixupm='git commit --amend'
 
 ## WAL
 #setsid wal -c; wal -q -b "#111111" -i /home/hersh/Pictures/wallpaper.png
