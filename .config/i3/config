@@ -124,9 +124,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #music
-bindsym $mod+u exec --no-startup-id spotifycli --prev
-bindsym $mod+y exec --no-startup-id spotifycli --playpause
-bindsym $mod+semicolon exec --no-startup-id spotifycli --next
+bindsym $mod+u exec --no-startup-id ~/.local/bin/spotifycli --prev
+bindsym $mod+y exec --no-startup-id ~/.local/bin/spotifycli --playpause
+bindsym $mod+semicolon exec --no-startup-id ~/.local/bin/spotifycli --next
 
 
 # =============================================
