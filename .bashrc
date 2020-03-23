@@ -63,6 +63,8 @@ else
 fi
 unset color_prompt force_color_prompt
 
+[ -f ~/.bash_profile ] && . ~/.bash_profile
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -120,14 +122,7 @@ md () { mkdir -p $1 cd $1; }
 myt () { mpv --ytdl-format='bestvideo[height<=?1080]+bestaudio/best' ytdl://ytsearch:"$@"; }
 
 ## WAL
-#setsid wal -c; wal -q -b "#111111" -i /home/hersh/Pictures/wallpaper.png
-#setsid wal -n -e -q -b "#111111" -i /home/hersh/Pictures/wallpaper.png
 (cat ~/.cache/wal/sequences &)
 
-# ADD NRFUTIL TO PATH #
-# export PATH=$PATH:/home/hersh/.local/lib/python3.6/site-packages/adafruit_nrfutil-0.5.3.post12.dist-info
-
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 export PATH=~/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH
+export PATH=~/.local/bin:$PATH
