@@ -181,19 +181,12 @@ bar {
 # =============================================
 exec --no-startup-id xrdb -load /home/hersh/.Xresources
 exec --no-startup-id setxkbmap us -variant colemak
-exec --no-startup-id gnome-session
-exec --no-startup-id dbus-send \
-    --session \
-    --print-reply=literal \
-    --dest=org.gnome.SessionManager \
-    "/org/gnome/SessionManager" \
-    org.gnome.SessionManager.RegisterClient \
-    "string:i3" \
-    "string:$DESKTOP_AUTOSTART_ID"
-exec --no-startup-id /usr/lib/gnome-settings-daemon/gsd-xsettings
+exec --no-startup-id xbindkeys
 exec --no-startup-id redshift -l -37:144
 exec --no-startup-id compton --vsync -b
-exec urxvt -hold -e bash -c "neofetch && bash"
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+exec urxvt -hold -e bash -c "neofetch && zsh"
 exec_always feh --bg-scale ~/Pictures/wallpaper.png
 
 
