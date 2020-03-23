@@ -15,7 +15,7 @@ set $mod Mod4
 # =============================================
 # I3 PARAMETERS   														"
 # =============================================
-font pango:Terminus 12
+font pango:Terminus 9
 floating_modifier $mod
 bindsym $mod+Shift+space move scratchpad
 bindsym $mod+space scratchpad show
@@ -162,7 +162,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bar {
   i3bar_command /usr/bin/i3bar --transparency
   status_command i3blocks -c /home/hersh/.config/i3/i3blocks.conf
-  font pango: Terminus, Font Awesome 5 Free, 12
+  font pango: Terminus, Font Awesome 5 Free, 9
   separator_symbol " / "
 	position top
 	colors {
@@ -186,7 +186,7 @@ exec --no-startup-id redshift -l -37:144
 exec --no-startup-id compton --vsync -b
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
-exec urxvt -hold -e bash -c "neofetch && zsh"
+exec urxvt -hold -e bash -c "cat ~/.cache/wal/sequences && neofetch && zsh"
 exec_always feh --bg-scale ~/Pictures/wallpaper.png
 
 
