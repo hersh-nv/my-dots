@@ -12,8 +12,8 @@ if [ -f $HOME/.config/rofi-power/config ]; then
   source $HOME/.config/rofi-power/config
 else
   LAUNCHER="rofi -width 30 -dmenu -i -p rofi-power:"
-  USE_LOCKER="true"
-  LOCKER="sxlock &"
+  USE_LOCKER="false"
+  LOCKER="i3lock"
 fi
 
 # Show exit wm option if exit command is provided as an argument
