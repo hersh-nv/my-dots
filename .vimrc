@@ -1,6 +1,6 @@
 set nocompatible              " be iMproved, required
 syntax on
-"filetype off                  " required
+filetype off                  " required
 
 """" ----------------------------
 """" VUNDLE 
@@ -32,8 +32,8 @@ set number
 set ruler
 set mouse=a
 
-set tabstop=2
-set shiftwidth=0
+set tabstop=4
+set shiftwidth=4
 set noexpandtab
 
 
