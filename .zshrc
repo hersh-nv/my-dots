@@ -107,3 +107,6 @@ fi
 
 # FUNCTIONS
 set_bg_color () { convert -size 32x32 xc:$1 Pictures/wallpaper.png && feh --bg-scale Pictures/wallpaper.png; }
+
+# PATH
+export PATH=~/.local/bin:$PATH
