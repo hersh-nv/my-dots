@@ -17,7 +17,7 @@ function afmagic_dashes {
 
 # primary prompt
 PS1='$FG[240]${(l.$(afmagic_dashes)..-.)}%{$reset_color%}
-$FG[002]%(!.#.λ) $FG[245]%~$(git_prompt_info)$(hg_prompt_info) %{$reset_color%}'
+$FG[003]%(!.#.λ) $FG[245]%~$(git_prompt_info)$(hg_prompt_info) %{$reset_color%}'
 PS2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
@@ -26,10 +26,10 @@ RPS1='${return_code}'
 RPS1+=' $my_gray%n@%m%{$reset_color%}%'
 
 # git settings
-ZSH_THEME_GIT_PROMPT_PREFIX="$FG[075]($FG[078]"
+ZSH_THEME_GIT_PROMPT_PREFIX="$FG[245]($FG[003]"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="$my_orange*%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[075])%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_DIRTY="$FG[001]*%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="$FG[245])%{$reset_color%}"
 
 # hg settings
 ZSH_THEME_HG_PROMPT_PREFIX="$FG[075]($FG[078]"
