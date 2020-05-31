@@ -136,6 +136,7 @@ bindsym $mod+semicolon exec --no-startup-id ~/.local/bin/spotifycli --next, exec
 set $white               #ffffffff
 set $black               #000000ff
 set $transparent         #00000000
+set $translucent         #00000022
 set $border-active       #ffffffff
 set $border-inactive     #11111177
 set $bg-color            #000000ff
@@ -145,7 +146,7 @@ set $text-color-dark     #000000ff
 set $inactive-text-color #ffffffff
 set $urgent-bg-color     #E53935ff
 set $ws-focus-bg-color   #ffffffff
-set $ws-focus-text-color #bb0088ff
+set $ws-focus-text-color #222222ff
 set $ws-unfocus-bg-color #00000022
 set $ws-unfocus-text-color #ffffffff
 
@@ -167,7 +168,7 @@ bar {
   separator_symbol " / "
 	position top
 	colors {
-		background $transparent
+		background $translucent
 		separator $text-color
 		#                  border             	background         		text
 		focused_workspace  $ws-focus-bg-color 	$ws-focus-bg-color 		$ws-focus-text-color
@@ -195,8 +196,8 @@ exec_always feh --bg-scale ~/Pictures/wallpaper.png
 # GAPS AND BORDERS														"
 # =============================================
 for_window [class=".*"] border pixel 1
-set $inner-gap-size 5
-set $outer-gap-size 0
+set $inner-gap-size 10
+set $outer-gap-size 20
 gaps inner $inner-gap-size
 gaps outer $outer-gap-size
 bindsym $mod+k gaps inner all set 0
