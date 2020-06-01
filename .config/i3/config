@@ -183,7 +183,7 @@ bar {
 exec --no-startup-id xrdb -load /home/hersh/.Xresources
 exec --no-startup-id redshift -l -37.84:144.95
 exec --no-startup-id compton --vsync -b
-exec urxvt -hold -e bash -c "neofetch && bash"
+exec urxvt -hold -e bash -c "cat ~/.cache/wal/sequences && neofetch && zsh"
 exec_always feh --bg-scale ~/pictures/wallpaper.png
 exec --no-startup-id nm-applet
 exec --no-startup-id xinput set-button-map $(xinput list | egrep "Touchpad" | sed -e 's/^.*id=//' -e 's/\s.*$//') 1 2 3 5 4 6 7
