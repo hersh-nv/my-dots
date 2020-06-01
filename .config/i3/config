@@ -136,7 +136,7 @@ bindsym $mod+p exec --no-startup-id spotifycli --next
 set $white               #ffffffff
 set $black               #000000ff
 set $transparent         #00000000
-set $border-active       #44ff44ff
+set $border-active       #2EE7CDff
 set $border-inactive     #11111177
 set $bg-color            #000000ff
 set $inactive-bg-color   #00000000
