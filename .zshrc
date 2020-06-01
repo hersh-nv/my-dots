@@ -106,7 +106,9 @@ fi
 (cat ~/.cache/wal/sequences &)
 
 # FUNCTIONS
-set_bg_color () { convert -size 32x32 xc:$1 Pictures/wallpaper.png && feh --bg-scale Pictures/wallpaper.png; }
+set_bg_color () { convert -size 32x32 xc:$1 pictures/wallpaper.png && feh --bg-scale pictures/wallpaper.png; }
+
+set_bg_color "$(cat bg-color)"
 
 # PATHS
 export PATH=~/.local/bin:$PATH
