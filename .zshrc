@@ -103,7 +103,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # STARTUP
-(cat ~/.cache/wal/sequences &)
+(\cat ~/.cache/wal/sequences &)
 
 # FUNCTIONS
 set_bg_color () { convert -size 32x32 xc:$1 pictures/wallpaper.png && feh --bg-scale pictures/wallpaper.png; }
