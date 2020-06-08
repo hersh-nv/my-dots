@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/hersh/.oh-my-zsh"
@@ -110,8 +110,6 @@ set_bg_color () { convert -size 32x32 xc:$1 pictures/wallpaper.png && feh --bg-s
 
 set_bg_color "$(cat bg-color)"
 
-# PATHS
-export PATH=~/.local/bin:$PATH
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/hersh/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
