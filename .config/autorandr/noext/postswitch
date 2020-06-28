@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # set urxvt font size
-sed -E /font/Is/[0-9]+/12/ -i .Xresources
-xrdb .Xresources
+sed -E /font/Is/[0-9]+/10/ -i ~/.Xresources
+xrdb ~/.Xresources
 
 # set i3 font size (windows and i3bar)
-sed -E /Terminus/Is/9/12/ -i .config/i3/config
+sed -E /Terminus/Is/9/10/ -i ~/.config/i3/config
 i3-msg restart
