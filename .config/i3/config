@@ -128,6 +128,20 @@ bindsym $mod+u exec --no-startup-id ~/.local/bin/spotifycli --prev, exec pkill -
 bindsym $mod+y exec --no-startup-id ~/.local/bin/spotifycli --playpause
 bindsym $mod+semicolon exec --no-startup-id ~/.local/bin/spotifycli --next, exec pkill -SIGRTMIN+2 i3blocks
 
+# Fn Keys
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%, exec pkill -SIGRTMIN+1 i3blocks
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%, exec pkill -SIGRTMIN+1 i3blocks
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle, exec pkill -SIGRTMIN+1 i3blocks
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scrn-btness-tick.sh up
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scrn-btness-tick.sh down
+bindsym XF86Display exec --no-startup-id autorandr mobile
+bindsym XF86Explorer exec --no-startup-id autorandr --change
+bindsym XF86Favorites exec --no-startup-id curl 192.168.0.49/TOGGLE
+bindsym Print exec gnome-screenshot -i
+bindsym Ctrl+Print exec escrotum -C -s
+bindsym $mod+Print exec gnome-screenshot -c
+bindsym $mod+Ctrl+Print exec gnome-screenshot -a -c
 
 
 # =============================================
@@ -204,19 +218,4 @@ bindsym $mod+k gaps inner all set 0
 bindsym $mod+Shift+k gaps outer all set 0
 bindsym $mod+m gaps inner all set $inner-gap-size
 bindsym $mod+Shift+m gaps outer all set $outer-gap-size
-
-# Fn Keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%, exec pkill -SIGRTMIN+1 i3blocks
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%, exec pkill -SIGRTMIN+1 i3blocks
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle, exec pkill -SIGRTMIN+1 i3blocks
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scrn-btness-tick.sh up
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scrn-btness-tick.sh down
-bindsym XF86Display exec --no-startup-id autorandr --change
-bindsym XF86Explorer exec --no-startup-id autorandr --change
-bindsym XF86Favorites exec --no-startup-id curl 192.168.0.49/TOGGLE
-bindsym Print exec gnome-screenshot -i
-bindsym $mod+Print exec gnome-screenshot -c
-bindsym $mod+Ctrl+Print exec gnome-screenshot -a -c
-
 
