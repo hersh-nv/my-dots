@@ -17,7 +17,7 @@ function afmagic_dashes {
 
 # primary prompt
 PS1='$FG[240]${(l.$(afmagic_dashes)..-.)}%{$reset_color%}
-$FG[003]%(!.#.λ) $FG[245]%~$(git_prompt_info)$(hg_prompt_info) %{$reset_color%}'
+$FG[002]%(!.#.λ) $FG[245]%~$(git_prompt_info)$(hg_prompt_info) %{$reset_color%}'
 PS2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
 
