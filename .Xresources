@@ -39,7 +39,7 @@ URxvt.keysym.M-u: url-select:select_next
 !URxvt.boldFont: xft:iosevka:bold:size=9
 !URxvt.italicFont: xft:iosevka:italic:size=9
 URxvt.letterSpace: -1
-URxvt.font: xft:Roboto Mono:size=9
+URxvt.font: xft:Roboto Mono for Powerline:size=9
 !URxvt.boldFont: xft:terminus:bold:size=9
 
 ! Tango theme

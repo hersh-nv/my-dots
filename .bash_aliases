@@ -16,7 +16,9 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias kbq='setxkbmap us'
 alias kbc='setxkbmap us -variant colemak'
 alias rr='ranger'
-alias cat='batcat'
+alias p='ping'
+alias pv='ping 10.8.0.1'
+alias up='xrandr --output eDP-1 --rotate normal'
 
 # GIT
 alias gs='git status'
