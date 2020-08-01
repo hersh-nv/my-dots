@@ -201,7 +201,7 @@ exec --no-startup-id xrdb -load /home/hersh/.Xresources
 exec --no-startup-id setxkbmap us -variant colemak
 exec --no-startup-id xbindkeys
 exec --no-startup-id redshift -l -37:144
-exec --no-startup-id compton --vsync -b --backend glx
+exec --no-startup-id compton --vsync -b --backend xr_glx_hybrid
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
 exec sleep 1 && urxvt -hold -e bash -c "cat ~/.cache/wal/sequences && neofetch && zsh"
