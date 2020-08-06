@@ -35,6 +35,7 @@ bindsym $mod+s exec rofi \
 	-modi combi \
 	-show combi
 bindsym $mod+t fullscreen toggle
+bindsym $mod+f focus mode_toggle
 bindsym $mod+Shift+f floating toggle
 bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
@@ -45,7 +46,6 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 bindsym $mod+q layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+f layout toggle all
 
 # change focus
 bindsym $mod+Left focus left
