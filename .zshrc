@@ -106,7 +106,9 @@ fi
 (cat ~/.cache/wal/sequences &)
 
 # FUNCTIONS
-set_bg_color () { convert -size 32x32 xc:$1 Pictures/wallpaper.png && feh --bg-scale Pictures/wallpaper.png; }
+set_bg_color () { convert -size 32x32 xc:$1 /home/hersh/Pictures/wallpaper.png && feh --bg-scale /home/hersh/Pictures/wallpaper.png; }
 
 # PATH
 export PATH=~/.local/bin:$PATH
+
+export EDITOR=/usr/bin/nvim
