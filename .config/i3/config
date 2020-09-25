@@ -34,8 +34,7 @@ bindsym $mod+s exec rofi \
 	-combi-modi window#drun \
 	-modi combi \
 	-show combi
-bindsym $mod+t fullscreen toggle
-bindsym $mod+f focus mode_toggle
+bindsym $mod+f fullscreen toggle
 bindsym $mod+Shift+f floating toggle
 bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
@@ -215,7 +214,7 @@ exec_always feh --bg-scale ~/Pictures/wallpaper.png
 # =============================================
 # GAPS AND BORDERS														"
 # =============================================
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 0
 set $inner-gap-size 10
 set $outer-gap-size 20
 gaps inner $inner-gap-size
