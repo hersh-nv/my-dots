@@ -11,8 +11,13 @@ off
 output eDP-1
 off
 output DP-2-1
-off
-output DP-2-2
-mode 1680x1050
+gamma 1.0:0.833:0.714
+mode 1920x1080
 pos 0x0
+rate 60.00
+output DP-2-2
+gamma 1.0:0.833:0.714
+mode 1680x1050
+pos 1920x0
 rate 59.88
+rotate left
