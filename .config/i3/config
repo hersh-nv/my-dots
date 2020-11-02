@@ -186,7 +186,7 @@ bar {
   separator_symbol " / "
 	position top
 	colors {
-		background $translucent
+		background $transparent
 		separator $text-color
 		#                  border             	background         		text
 		focused_workspace  $ws-focus-bg-color 	$ws-focus-bg-color 		$ws-focus-text-color
@@ -202,8 +202,8 @@ bar {
 exec --no-startup-id xrdb -load /home/hersh/.Xresources
 exec --no-startup-id setxkbmap us -variant colemak
 exec --no-startup-id xbindkeys
-exec --no-startup-id redshift -l -37:144
-exec --no-startup-id picom --experimental-backends &
+exec --no-startup-id redshift
+exec_always --no-startup-id picom --experimental-backends -b
 exec --no-startup-id flashfocus &
 exec --no-startup-id nm-applet
 exec --no-startup-id blueman-applet
