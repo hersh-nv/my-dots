@@ -8,7 +8,7 @@ export ZSH="/home/hersh/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic-mod"
+ZSH_THEME="delta"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -107,8 +107,11 @@ fi
 
 # FUNCTIONS
 set_bg_color () { convert -size 32x32 xc:$1 /home/hersh/Pictures/wallpaper.png && feh --bg-scale /home/hersh/Pictures/wallpaper.png; }
+set_bg_color $(cat ~/bg-color)
 
 # PATH
 export PATH=~/.local/bin:$PATH
 
 export EDITOR=/usr/bin/nvim
+
+export PATH="$HOME/.poetry/bin:$PATH"
