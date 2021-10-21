@@ -1,5 +1,5 @@
 ! URxvt
-Xft.dpi: 192
+Xft.dpi: 96
 
 ! General settings
 URxvt.saveLines: 2000
@@ -10,7 +10,7 @@ URxvt.termName: rxvt
 URxvt.urgentOnBell: True
 URxvt.cursorUnderline: True
 URxvt.cursorBlink: True
-URxvt.internalBorder: 20
+URxvt.internalBorder: 10
 
 ! Extensions
 URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,font-size
@@ -35,12 +35,9 @@ URxvt.keysym.M-u: url-select:select_next
 !URxvt.keysym.End: \033[4~
 
 ! Fonts
-!URxvt.font: xft:iosevka:size=9
-!URxvt.boldFont: xft:iosevka:bold:size=9
-!URxvt.italicFont: xft:iosevka:italic:size=9
 URxvt.letterSpace: -1
-URxvt.font: xft:Roboto Mono for Powerline:size=9
-!URxvt.boldFont: xft:terminus:bold:size=9
+URxvt.font: xft:Roboto Mono for Powerline:size=5
+!URxvt.boldFont: xft:Roboto Mono Bold:size=9
 
 ! Tango theme
 
@@ -149,10 +146,8 @@ URxvt.preeditType: OverTheSpot
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-URxvt.keysym.C-Up:     font-size:increase
-URxvt.keysym.C-Down:   font-size:decrease
-URxvt.keysym.C-S-Up:   font-size:incglobal
-URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-S-Up:   font-size:increase
+URxvt.keysym.C-S-Down: font-size:decrease
 URxvt.keysym.C-equal:  font-size:reset
 URxvt.keysym.C-slash:  font-size:show
 URxvt.keysym.Shift-Up: command:\033]720;1\007

@@ -8,7 +8,7 @@ export ZSH="/home/hersh/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="af-magic-mod"
+ZSH_THEME="minimal-mod"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -104,8 +104,12 @@ fi
 
 # STARTUP
 (\cat ~/.cache/wal/sequences &)
+eval $(dircolors -b $HOME/.config/.dircolors)
 
 # FUNCTIONS
 set_bg_color () { convert -size 32x32 xc:$1 ~/pictures/wallpaper.png && feh --bg-scale ~/pictures/wallpaper.png; }
 
 export EDITOR=/usr/bin/nvim
+
+export PATH="$HOME/.poetry/bin:$PATH"
+eval "$(pyenv virtualenv-init -)"

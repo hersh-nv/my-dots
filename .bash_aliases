@@ -1,3 +1,7 @@
+# ENV VARS
+DEBFULLNAME='Hersh Nevgi'
+DEBEMAIL='hersh@seermedical.com'
+
 # LS
 alias ll='ls -ahlF'
 alias la='ls -A'
@@ -17,8 +21,11 @@ alias kbq='setxkbmap us'
 alias kbc='setxkbmap us -variant colemak'
 alias rr='ranger'
 alias p='ping'
-alias pv='ping 10.8.0.1'
+alias pp='prettyping'
 alias up='xrandr --output eDP-1 --rotate normal'
+alias dh='du -a -h --max-depth=1'
+alias tmux='tmux -2'
+alias cb='xclip -selection c'
 
 # GIT
 alias gs='git status'
@@ -31,3 +38,19 @@ alias gcam='git commit -a -m'
 alias gau='git add -u'
 alias gfixup='git commit --amend --no-edit'
 alias gfixupm='git commit --amend'
+
+# FUNCTIONS
+unzipd() {
+    if [[ $# != 1 ]]; then echo I need a single argument, the name of the archive to extract; return 1; fi
+    target="${1%.zip}"
+    unzip "$1" -d "${target##*/}"
+}
+
+# SEER
+shv() {
+	pepper -L "$1" grains.item hub_info:seer_hub_version
+}
+
+hub_camera_tunnel() {
+	ssh -NL 8080:192.168.20.110:80 $1
+}
