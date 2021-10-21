@@ -1,0 +1,436 @@
+[apps/guake/general]
+save-tabs-when-changed=true
+
+[apps/update-manager]
+first-run=false
+launch-count=71
+launch-time=int64 1634604984
+show-details=true
+window-height=490
+window-width=528
+
+[com/ubuntu/SoftwareProperties]
+goa-account-id='account_1591631634_0'
+
+[com/ubuntu/update-notifier]
+release-check-time=uint32 1634687536
+show-livepatch-status-icon=true
+
+[com/uploadedlobster/peek]
+persist-save-folder='/home/hersh/seer/gifs'
+persist-window-geometry=(2266, 578, 1327, 474)
+recording-downsample=2
+recording-framerate=20
+recording-start-delay=2
+
+[desktop/ibus/general]
+preload-engines=['xkb:us::eng']
+version='1.5.22'
+
+[desktop/ibus/panel/emoji]
+favorites=['√', 'π']
+
+[org/blueman/general]
+sort-by='alias'
+window-properties=[614, 742, 37, 268]
+
+[org/blueman/plugins/powermanager]
+auto-power-on=@mb true
+
+[org/blueman/plugins/recentconns]
+recent-connections=[{'adapter': '28:16:A8:70:08:61', 'address': '00:09:A7:31:90:42', 'alias': 'onyx', 'icon': 'audio-card', 'name': 'Auto connect profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1612410859.204477', 'device': '', 'mitem': ''}]
+
+[org/gnome/cheese]
+burst-delay=1000
+camera='ipu3-imgu'
+photo-x-resolution=640
+photo-y-resolution=480
+video-x-resolution=640
+video-y-resolution=480
+
+[org/gnome/control-center]
+last-panel='sound'
+
+[org/gnome/desktop/a11y/applications]
+screen-reader-enabled=false
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST']
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'gnome-system-monitor.desktop', 'gucharmap.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.eog.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Screenshot.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'simple-scan.desktop', 'vinagre.desktop', 'yelp.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/hersh/.local/share/backgrounds/2020-06-10-09-44-34-wallpaper.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us+colemak'), ('xkb', 'us')]
+sources=[('xkb', 'us+colemak'), ('xkb', 'us')]
+xkb-options=['grp_led:scroll']
+
+[org/gnome/desktop/interface]
+clock-show-seconds=true
+clock-show-weekday=true
+document-font-name='Roboto Mono Bold Italic 9'
+enable-hot-corners=false
+font-name='Roboto Mono 9'
+gtk-im-module='gtk-im-context-simple'
+gtk-theme='Yaru-dark'
+monospace-font-name='Roboto Mono 9'
+scaling-factor=uint32 1
+show-battery-percentage=true
+text-scaling-factor=1.0
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+application-children=['apport-gtk', 'snap-store-ubuntu-software', 'firefox', 'org-gnome-nautilus', 'gnome-network-panel', 'gnome-power-panel', 'org-gnome-gedit', 'slack', 'gnome-printers-panel', 'update-manager', 'sublime-text', 'rxvt-unicode', 'org-remmina-remmina', 'gnome-control-center', 'discord', 'com-uploadedlobster-peek', 'spotify', 'feh', 'mpv', 'chromium-chromium', 'org-gnome-software', 'x2goclient', 'org-gnome-extensions-desktop', 'org-gnome-chromegnomeshell', 'jetbrains-pycharm-ce', 'blueman-manager', 'google-chrome', 'zoom']
+show-banners=true
+
+[org/gnome/desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
+[org/gnome/desktop/notifications/application/blueman-manager]
+application-id='blueman-manager.desktop'
+
+[org/gnome/desktop/notifications/application/chromium-chromium]
+application-id='chromium_chromium.desktop'
+
+[org/gnome/desktop/notifications/application/com-uploadedlobster-peek]
+application-id='com.uploadedlobster.peek.desktop'
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[org/gnome/desktop/notifications/application/feh]
+application-id='feh.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-control-center]
+application-id='gnome-control-center.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-network-panel]
+application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/jetbrains-pycharm-ce]
+application-id='jetbrains-pycharm-ce.desktop'
+
+[org/gnome/desktop/notifications/application/mpv]
+application-id='mpv.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-chromegnomeshell]
+application-id='org.gnome.ChromeGnomeShell.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions-desktop]
+application-id='org.gnome.Extensions.desktop.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-gedit]
+application-id='org.gnome.gedit.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
+
+[org/gnome/desktop/notifications/application/org-remmina-remmina]
+application-id='org.remmina.Remmina.desktop'
+
+[org/gnome/desktop/notifications/application/rxvt-unicode]
+application-id='rxvt-unicode.desktop'
+
+[org/gnome/desktop/notifications/application/slack]
+application-id='slack.desktop'
+
+[org/gnome/desktop/notifications/application/snap-store-ubuntu-software]
+application-id='snap-store_ubuntu-software.desktop'
+
+[org/gnome/desktop/notifications/application/spotify]
+application-id='spotify.desktop'
+
+[org/gnome/desktop/notifications/application/sublime-text]
+application-id='sublime_text.desktop'
+
+[org/gnome/desktop/notifications/application/update-manager]
+application-id='update-manager.desktop'
+
+[org/gnome/desktop/notifications/application/x2goclient]
+application-id='x2goclient.desktop'
+
+[org/gnome/desktop/notifications/application/zoom]
+application-id='Zoom.desktop'
+
+[org/gnome/desktop/peripherals/mouse]
+accel-profile='default'
+speed=0.76470588235294112
+
+[org/gnome/desktop/peripherals/tablets/045e:0020]
+mapping='absolute'
+output=['', '', '']
+
+[org/gnome/desktop/peripherals/touchpad]
+speed=0.44117647058823528
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+disable-microphone=false
+report-technical-problems=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+lock-delay=uint32 120
+picture-options='zoom'
+picture-uri='file:///home/hersh/.local/share/backgrounds/2020-06-10-09-44-34-wallpaper.png'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 180
+
+[org/gnome/desktop/sound]
+allow-volume-above-100-percent=false
+event-sounds=true
+
+[org/gnome/desktop/wm/keybindings]
+close=['<Super>x']
+minimize=['<Super>c']
+move-to-workspace-down=['<Shift><Super>a']
+move-to-workspace-up=['<Shift><Super>q']
+switch-input-source=@as []
+switch-input-source-backward=@as []
+switch-to-workspace-down=['<Super>a']
+switch-to-workspace-up=['<Super>q']
+toggle-fullscreen=['<Super>f']
+toggle-maximized=@as []
+unmaximize=['<Super>Down']
+
+[org/gnome/desktop/wm/preferences]
+button-layout=':minimize,maximize,close'
+titlebar-font='Roboto Mono Bold Italic 8'
+
+[org/gnome/eog/ui]
+sidebar=false
+
+[org/gnome/eog/view]
+background-color='rgb(0,0,0)'
+use-background-color=true
+
+[org/gnome/evince/default]
+window-ratio=(1.7899159663865547, 1.0902612826603326)
+
+[org/gnome/evolution-data-server]
+migrated=true
+network-monitor-gio-name=''
+
+[org/gnome/file-roller/dialogs/extract]
+recreate-folders=true
+skip-newer=false
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=250
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
+[org/gnome/gedit/plugins]
+active-plugins=['time', 'filebrowser', 'docinfo', 'modelines', 'spell']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///media/hersh/disk'
+
+[org/gnome/gedit/preferences/editor]
+scheme='oblivion'
+wrap-last-split-mode='word'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(985, 640)
+state=87168
+
+[org/gnome/gnome-screenshot]
+border-effect='none'
+delay=3
+include-border=true
+include-pointer=false
+last-save-directory='file:///home/hersh/Desktop'
+
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+maximized=false
+network-total-in-bits=false
+show-dependencies=false
+show-whose-processes='user'
+window-state=(1212, 500, 50, 50)
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+
+[org/gnome/libgnomekbd/preview]
+height=519
+width=1224
+x=200
+y=128
+
+[org/gnome/mutter]
+experimental-features=['x11-randr-fractional-scaling']
+workspaces-only-on-primary=false
+
+[org/gnome/nautilus/compression]
+default-compression-format='zip'
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='list-view'
+search-filter-time-type='last_modified'
+search-view='list-view'
+
+[org/gnome/nautilus/window-state]
+initial-size=(1573, 665)
+maximized=false
+sidebar-width=394
+
+[org/gnome/nm-applet/eap/09861f84-8779-40c2-8de9-99f154aa8f7e]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/power-manager]
+info-history-type='charge'
+info-last-device='/org/freedesktop/UPower/devices/line_power_ADP1'
+info-stats-type='discharge-accuracy'
+
+[org/gnome/settings-daemon/peripherals/touchscreen]
+orientation-lock=false
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+
+[org/gnome/settings-daemon/plugins/media-keys]
+area-screenshot=['<Shift>F10']
+area-screenshot-clip=['<Primary><Shift>F10']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+screenshot=['F10']
+screenshot-clip=['<Primary>F10']
+search=['<Super>space']
+terminal=@as []
+window-screenshot=['<Alt>F10']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>Return'
+command='urxvt'
+name='Launch urxvt'
+
+[org/gnome/settings-daemon/plugins/power]
+ambient-enabled=false
+power-button-action='suspend'
+sleep-inactive-ac-timeout=3600
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-timeout=900
+
+[org/gnome/settings-daemon/plugins/xsettings]
+hinting='slight'
+
+[org/gnome/shell]
+app-picker-view=uint32 1
+disabled-extensions=['ubuntu-dock@ubuntu.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'extensions@abteil.org', 'ubuntu-appindicators@ubuntu.com', 'sound-output-device-chooser@kgshank.net', 'dpi-switcher@alexei.ivanovski.gmail.com', 'titlebar-screenshot@jmaargh.github.com']
+favorite-apps=['rxvt-unicode.desktop', 'org.remmina.Remmina.desktop', 'google-chrome.desktop', 'slack.desktop', 'jetbrains-pycharm-ce.desktop', 'code.desktop', 'gnome-control-center.desktop', 'org.gnome.Nautilus.desktop', 'spotify.desktop', 'firefox.desktop']
+had-bluetooth-devices-setup=true
+remember-mount-password=false
+
+[org/gnome/shell/extensions/dash-to-dock]
+dash-max-icon-size=48
+dock-fixed=false
+preferred-monitor=0
+
+[org/gnome/shell/extensions/desktop-icons]
+show-home=false
+show-trash=false
+
+[org/gnome/shell/extensions/extensions]
+position='panel'
+show-add=true
+
+[org/gnome/shell/extensions/sound-output-device-chooser]
+ports-settings='{"version":2,"ports":[]}'
+
+[org/gnome/shell/extensions/titlebar-screenshot]
+icon-in-menu=true
+menu-position=uint32 8
+use-separators=true
+
+[org/gnome/shell/extensions/user-theme]
+name=''
+
+[org/gnome/shell/keybindings]
+toggle-application-view=@as []
+
+[org/gnome/software]
+check-timestamp=int64 1634771103
+online-updates-timestamp=int64 1634774870
+
+[org/gnome/system/location]
+enabled=false
+
+[org/gnome/terminal/legacy/profiles:]
+default='395c2d98-49c6-4d0d-ae13-fd214473dd57'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '395c2d98-49c6-4d0d-ae13-fd214473dd57']
+
+[org/gnome/terminal/legacy/profiles:/:395c2d98-49c6-4d0d-ae13-fd214473dd57]
+font='IBM Plex Mono Medium 10'
+use-system-font=false
+visible-name='robot'
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=394
+sort-column='modified'
+sort-directories-first=true
+sort-order='descending'
+type-format='category'
+window-position=(2195, 568)
+window-size=(1369, 902)
