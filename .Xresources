@@ -13,7 +13,7 @@ URxvt.cursorBlink: True
 URxvt.internalBorder: 10
 
 ! Extensions
-URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,font-size
+URxvt.perl-ext-common: default,selection-to-clipboard
 URxvt.urlLauncher: xdg-open
 URxvt.urlButton: 1
 URxvt.underlineURLs: True
@@ -25,8 +25,8 @@ URxvt.pasteCommand: xclip -o -selection clipboard
 !URxvt.keysym.C-Shift-c: clipboard:copy
 !URxvt.keysym.C-Shift-v: clipboard:paste
 URxvt.keysym.Mod4-C-v: clipboard:paste_escaped
-URxvt.keysym.M-c: clipboard:copy
-URxvt.keysym.M-v: clipboard:paste
+URxvt.keysym.M-c: eval:selection_to_clipboard
+URxvt.keysym.M-v: eval:paste_clipboard
 URxvt.keysym.M-C-v: clipboard:paste_escaped
 URxvt.keysym.M-Escape: keyboard-select:activate
 URxvt.keysym.C-Escape: keyboard-select:activate
@@ -36,7 +36,7 @@ URxvt.keysym.M-u: url-select:select_next
 
 ! Fonts
 URxvt.letterSpace: -1
-URxvt.font: xft:Roboto Mono for Powerline:size=5
+URxvt.font: xft:Roboto Mono for Powerline:size=10.5
 !URxvt.boldFont: xft:Roboto Mono Bold:size=9
 
 ! Tango theme

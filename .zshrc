@@ -107,9 +107,18 @@ fi
 eval $(dircolors -b $HOME/.config/.dircolors)
 
 # FUNCTIONS
-set_bg_color () { convert -size 32x32 xc:$1 ~/pictures/wallpaper.png && feh --bg-scale ~/pictures/wallpaper.png; }
+set_bg_color () { convert -size 32x32 xc:$1 ~/Pictures/wallpaper.png && feh --bg-scale ~/Pictures/wallpaper.png; }
 
 export EDITOR=/usr/bin/nvim
 
 export PATH="$HOME/.poetry/bin:$PATH"
-eval "$(pyenv virtualenv-init -)"
+
+source /etc/zsh_command_not_found
+
+# Add default node to path
+export PATH=~/.nvm/versions/node/v14.18.1/bin:$PATH
+# load nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" --no-use # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
