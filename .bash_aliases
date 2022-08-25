@@ -24,6 +24,8 @@ alias tmux='tmux -2'
 alias cb='xclip -selection c'
 alias ddate='date +"%Y-%m-%d_%H%M%S"'
 alias df='df -xsquashfs -xtmpfs'
+alias ts='tailscale'
+alias saltc='tac | sed "/False/,+1d" | tac'
 
 # GIT
 alias gs='git status'
